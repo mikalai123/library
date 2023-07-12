@@ -1,0 +1,13 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+body {
+    background: #c6c6c6;
+}
+header {
+    max-width: 1440px;
+    height: 50px;
+    background: black;
+    color: white;
+}
