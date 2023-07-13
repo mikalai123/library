@@ -6,8 +6,23 @@ body {
     background: #c6c6c6;
 }
 header {
+    display: flex;
+    align-items: center;
     max-width: 1440px;
-    height: 50px;
+    height: 90px;
     background: black;
     color: white;
+}
+.nav-list {
+    display: flex;
+}
+.nav-link {
+    list-style-type: none;
+}
+a:hover {
+    color: yellowgreen;
+}
+a {
+    color: white;
+    text-decoration: none;
 }
