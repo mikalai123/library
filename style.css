@@ -18,6 +18,7 @@ header {
 }
 .nav-link {
     list-style-type: none;
+    margin-left: 15px;
 }
 a:hover {
     color: yellowgreen;
@@ -25,6 +26,7 @@ a:hover {
 a {
     color: white;
     text-decoration: none;
+    transition: 0.6s;
 }
 /* Welcom  */
 
@@ -39,6 +41,29 @@ a {
     font-size: 35px;
     display: flex;
     margin-top: -435px;
+}
 
+/* About */
+ #about {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background: white;
+    height: 837px;
+    font-size: 30px;
+ }
+ .slider-line {
+    display: inline-flex;
+    max-width: 1400px;
+    gap: 25px;
+    overflow: hidden;
+ }
+.radio {
+    display: flex;
+    width: 68px;
+}
+input {
+    width: 15px;
+    height: 15px;
 }
 
