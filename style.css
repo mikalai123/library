@@ -125,3 +125,24 @@ input {
     display: flex;
     flex-flow: column;
 }
+
+/* contacts */
+.contacts {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background: white;
+    font-size: 30px;
+    height: 841px;
+
+}
+.info {
+    color: black;
+}
+.contacts-wrapper {
+    display: flex;
+}
+.contact-info {
+    display: flex;
+    flex-flow: column;
+}
