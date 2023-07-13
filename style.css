@@ -146,3 +146,59 @@ input {
     display: flex;
     flex-flow: column;
 }
+/* Cards */
+.card {
+    display: flex;
+    flex-flow: column;
+}
+.cards {
+    display: flex;
+    flex-flow: column;
+    background: white;
+    font-size: 30px;
+    height: 614px;
+}
+.card-body {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 600px;
+    height: 387px;
+    border: 2px solid #BB945F;
+}
+.card-wrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 560px;
+    height: 272px;
+    background-color: #BB945F;
+    gap: 25px;
+}
+.cards-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.name,
+.card-block {
+    width: 520px;
+    height: 66px;
+    border: 2px solid #BB945F;
+    border-radius: 10px;
+}
+.btn {
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+}
+.get {
+    text-align: right;
+    width: 456px;
+    height: 253px;
+}
+.btn-card {
+    width: 75px;
+    height: 30px;
+}
