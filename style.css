@@ -273,20 +273,20 @@ input {
     flex-flow: column;
     margin-left: 0;
     margin-right: 0;
-    gap: 42px;
+    gap: 30px;
 }
 .text.coffee-list {
     margin-left: 19px;
     letter-spacing: 2.5px;
 }
 .brew {
-    margin-left: 20px;
+    margin-left: 9px;
     font-size: 21px;
     margin-top: 3px;
     letter-spacing: 1.5px;
 }
 .pot {
-    margin-left: 20px;
+    margin-left: 10px;
     font-size: 21px;
     margin-top: 14px;
     letter-spacing: 1.5px;
@@ -295,7 +295,7 @@ input {
 .cappuccino,
 .hot,
 .cold {
-    margin-left: 20px;
+    margin-left: 10px;
     font-size: 21px;
     margin-top: 12px;
     letter-spacing: 1.5px;
@@ -601,4 +601,46 @@ input {
 .my-name {
     margin-right: 18px;
 }
- 
+ .block {
+    display: flex;
+ }
+.line-line {
+    width: 100px;
+    height: 0px;
+    border: 1px solid red;
+    margin-top: 23px;
+    margin-left: 64px;
+}
+.line-line1 {
+    margin-left: 152px;
+}
+.line-line2 {
+    margin-left: 118px;
+}
+.line-line3 {
+    margin-left: 166px;
+}
+.line-line4 {
+    margin-left: 155px;
+}
+.price {
+    margin-left: 56px;
+    font-size: 20px;
+    margin-top: 12px;
+    letter-spacing: 1.5px;
+}
+.price1 {
+    margin-left: 52px;
+}
+.line-line-food {
+    width: 100px;
+    height: 0px;
+    border: 1px solid red;
+    margin-top: 23px;
+    margin-left: 56px;
+}
+.cold-food {
+    font-size: 21px;
+    margin-top: 12px;
+    letter-spacing: 1.5px;
+}
