@@ -42,6 +42,9 @@ a {
 .welcom {
     height: 600px;
 }
+.none {
+    display: none;
+}
 .title-welcom {
     display: flex;
     flex-flow: column;
