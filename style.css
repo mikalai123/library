@@ -133,6 +133,9 @@ input {
     width: 20px;
     height: 30px;
 }
+.btn-input {
+    cursor: pointer;
+}
 .radio-about {
     display: none;
 }   
@@ -281,6 +284,7 @@ input {
 .text.coffee-list {
     margin-left: 19px;
     letter-spacing: 2.5px;
+    color: #BB945F;
 }
 .line-line {
     width: 100px;
@@ -346,6 +350,7 @@ input {
 .text.food-list {
     margin-right: 20px;
     letter-spacing: 2.5px;
+    color: #BB945F;
 }
 .forest {
     margin-left: -92px;
@@ -529,6 +534,7 @@ input {
 }
 .btn:hover {
     background: #BB945F;
+    border: #BB945F;
 }
 .btn-2 {
     margin-top: 56px;
@@ -549,6 +555,7 @@ input {
 }
 .btn-check:hover {
     background: #BB945F;
+    border: #BB945F;
 }
 .get {
     text-align: right;
@@ -577,6 +584,7 @@ input {
 }
 .btn-card:hover {
     background: #BB945F;
+    border: #BB945F;
 }
 .transition {
     transition: 1s;
