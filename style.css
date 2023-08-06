@@ -40,7 +40,10 @@ a {
 /* Welcom  */
 
 .welcom {
-    height: 600px;
+    max-height: 600px;
+}
+.img-welcom {
+    max-width: 100%;
 }
 .none {
     display: none;
@@ -251,7 +254,7 @@ input {
     /* justify-content: center; */
     background: white;
     font-size: 30px;
-    height: 841px;
+    min-height: 841px;
 }
 .coffee-text {
     font-size: 40px;
@@ -265,7 +268,7 @@ input {
     font-size: 24.2px;
     text-align: center;
     line-height: 39.5px;
-    height: 142px;
+    min-height: 142px;
 }
 .shop {
     display: flex;
@@ -402,7 +405,7 @@ input {
     justify-content: center;
     background: white;
     font-size: 30px;
-    height: 841px;
+    min-height: 841px;
 }
 .contact-text {
     font-size: 40px;
@@ -479,7 +482,7 @@ input {
     flex-flow: column;
     background: white;
     font-size: 30px;
-    height: 349px;
+    min-height: 349px;
 }
 .card-body {
     display: flex;
