@@ -37,6 +37,64 @@ a {
     text-decoration: none;
     transition: 0.6s;
 }
+.overlay{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.overlay.open{
+    display: block;
+    background: rgba(41, 41, 41, 0.6);
+
+}
+
+/* nav */
+
+.nav-line {
+    display: none;
+	width: 45px;
+	height: 20px;
+	position: relative;
+	z-index:2;
+}
+.nav-line span {
+	width: 45px;
+	height: 3px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	transition: all 0.5s;
+}
+.nav-line span:nth-of-type(2) {
+	top: calc(50% - 10px);
+}
+.nav-line span:nth-of-type(3) {
+	top: calc(50% + 10px);
+}
+
+
+
+
+
+
+.nav-line.active span:nth-of-type(1) {
+    display: none;
+}
+.nav-line.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);  
+  }
+  .nav-line.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);  
+  }
+
 /* Welcom  */
 
 .welcom {
@@ -48,21 +106,21 @@ a {
 .none {
     display: none;
 }
-.title-welcom {
+.welcom-block {
     display: flex;
+}
+.title-welcom {
     flex-flow: column;
     background: black;
     color: white;
-    position: absolute;
     width: 600px;
     height: 220px;
-    text-align: center;
-    align-items: center;
     justify-content: center;
     font-size: 40px;
     letter-spacing: 3px;
     display: flex;
     margin-top: -384px;
+    margin-left: 0px;
 }
 span.text {
     font-size: 39px;
@@ -99,8 +157,8 @@ span.text {
     font-size: 40px;
     margin-top: -17px;
 }
-.line {
-    margin-top: -10px;
+.line-separator {
+    margin-top: -13px;
 }
 .text-about {
     font-size: 20px;
@@ -120,9 +178,6 @@ span.text {
     height: 837px;
     font-size: 30px;
  }
- /* img {
-    width: 100%;
- } */
  .slider-line {
     display: inline-flex;
     max-width: 1400px;
@@ -257,7 +312,6 @@ input {
 .coffee {
     display: flex;
     flex-flow: column;
-    /* justify-content: center; */
     background: white;
     font-size: 30px;
     min-height: 841px;
@@ -400,10 +454,6 @@ input {
 .qwe {
     display: inline-flex;
 }
-.line1 {
-    border-bottom: 1px solid #f00;
-}
-
 /* contacts */
 .contacts {
     display: flex;
@@ -424,7 +474,6 @@ input {
 .cont {
     margin-left: 20px;
     font-size: 22px;
-    /* margin-top: 43px; */
     letter-spacing: 1.5px;
 }
 .info {
@@ -439,7 +488,6 @@ input {
     display: flex;
     flex-flow: column;
     margin-left: 0;
-    /* justify-content: space-between; */
     margin-top: 41px;
 }
 .info-please {
@@ -628,9 +676,6 @@ input {
     display: flex;
     list-style-type: none;
 }
-/* .img-footer {
-    margin-left: 10px;
-} */
 .time {
     color: white;
     font-size: 15px;
@@ -690,7 +735,13 @@ input {
     .radio {
         display: flex;
         width: 120px;
-        margin-top: 15px;
+        margin-top: 13px;
+        margin-left: 274px;
+    }
+    .text-about {
+        width: 700px;
+        line-height: 40px;
+        margin-top: 30px;
     }
     .slider-line {
         max-width: 450px;
@@ -699,6 +750,7 @@ input {
         display: block;
     }
     .slider-wrapper {
+        width: 676px;
         display: flex;
         align-items: center;
     }
@@ -707,7 +759,6 @@ input {
     }
     .shop {
         flex-flow: column;
-        /* align-items: center; */
     }
     .shop-drink {
         margin-left: 0;
@@ -731,30 +782,57 @@ input {
 }
 
 @media (max-width: 768px) {
+    .icon {
+        position: relative;
+        margin-left: 299px;
+        z-index: 2;
+    }
+    .nav-line {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        margin-right: 21px;
+        z-index: 2;
+    }
+    .nav {
+        width: 332px;
+        height: 570px;
+        position: fixed;
+        justify-content: center;
+        background: #000000;
+        right: 0;
+        top: 0;
+        transform: translateX(100%);
+        transition: transform 0.5s;
+        z-index: 2;
+    }
+    .nav.active {
+        transform: translateX(0);
+    }
+
     .nav-list {
-        display: none;
+        width: 220px;
+        height: 528px;
+        flex-flow: column;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .nav-link {
+        list-style-type: none;
+        margin-left: 23px;
+        margin-top: 41px;
+        width: 151px;
+        text-align: center;
     }
     #about {
         text-align: center;
-    }
-    .text-about {
-        width: 700px;
-        line-height: 40px;
-        margin-top: 30px;
     }
     .slider {
         height: 595px;
         margin-top: 20px;
     }
-    .slider-wrapper {
-        width: 676px;
-    }
     .btn-slider {
         margin-top: 39px;
-    }
-    .radio {
-        margin-top: 13px;
-        margin-left: 274px;
     }
     .about-title {
         font-size: 40px;
@@ -773,10 +851,12 @@ input {
     .autumn {
         margin-right: -15px;
     }
-    .coffee-title {
-        width: 740px;
-        margin-left: 13px;
+    .coffee-title { 
+        width: 728px;
+        margin-left: 19px;
         margin-top: 35px;
+        margin-right: 0px;
+    
     }
     .coffee-text {
         margin-bottom: -9px;
@@ -798,7 +878,7 @@ input {
         margin-top: 56px;
     }
     .cards-wrapper {
-        margin-top: 32px;
+        margin-top: 35px;
     }
     .card {
         margin-left: 82px;
@@ -822,6 +902,4 @@ input {
     .rss {
         margin-left: 65px;
     }
-
-    
 }
