@@ -166,6 +166,7 @@ span.text {
 }
 .slider {
     margin-top: 27px;
+    text-align: center;
 }
 .btn-slider {
     display: none;
@@ -178,11 +179,25 @@ span.text {
     height: 837px;
     font-size: 30px;
  }
+ .slider-block {
+    max-width: 1400px;
+    overflow: hidden;
+ }
  .slider-line {
     display: inline-flex;
-    max-width: 1400px;
+    max-width: 2350px;
     gap: 25px;
-    overflow: hidden;
+    position: relative;
+    transition: all ease 1s;
+ }
+ .dot-close {
+    display: none;
+ }
+ .left {
+    left: 475px;
+ }
+ .right {
+    right: 475px;
  }
 .radio {
     display: flex;
@@ -735,8 +750,8 @@ input {
     .radio {
         display: flex;
         width: 120px;
-        margin-top: 13px;
-        margin-left: 274px;
+        margin-top: 6px;
+        margin-left: 276px;
     }
     .text-about {
         width: 700px;
@@ -748,6 +763,12 @@ input {
     }
     .btn-slider {
         display: block;
+        cursor: pointer;
+        border: none;
+        background: white;
+    }
+    .btn-div {
+        font-size: 30px;
     }
     .slider-wrapper {
         width: 676px;
@@ -831,6 +852,12 @@ input {
         height: 595px;
         margin-top: 20px;
     }
+    .slider-block {
+        max-width: 450px;
+    }
+    .dot-close {
+        display: block;
+     }
     .btn-slider {
         margin-top: 39px;
     }
@@ -902,4 +929,24 @@ input {
     .rss {
         margin-left: 65px;
     }
+}
+
+.color {
+    color: #BB945F;
+}
+
+.dot-wrapper {
+    display: inline-flex;
+    margin-top: 16px;
+}
+.dot {
+    width: 16px;
+    height: 16px;
+    margin: 5px;
+    background-color: #000000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.active-dot {
+    background: #BB945F;
 }

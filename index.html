@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <h1 class="title text">Brooklyn Public Library</h1>
@@ -58,41 +60,33 @@
         <section id="about">
             <h2 class="about-title text">About</h2>
             <p class="line-separator">____</p>
-            <span class="text-about">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside</span>
+            <span class="text-about">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee
+                shop inside</span>
             <div class="slider">
                 <div class="slider-wrapper">
-                    <div class="btn-slider pre"> < </div>
-                    <div class="slider-line">
-                        <img src="data/img/image1.jpg" alt="photo1">
-                        <img src="data/img/image2.jpg" alt="photo2">
-                        <img src="data/img/image3.jpg" alt="photo3">
-                        <img src="data/img/image4.jpg" alt="photo4">
-                        <img src="data/img/image5.jpg" alt="photo5">
+                    <button class="btn-slider pre" disabled>
+                        <div class="btn-div">
+                            < </div>
+                    </button>
+                    <div class="slider-block">
+                        <div class="slider-line">
+                            <img class="slider-img" src="data/img/image1.jpg" alt="photo1">
+                            <img class="slider-img" src="data/img/image2.jpg" alt="photo2">
+                            <img class="slider-img" src="data/img/image3.jpg" alt="photo3">
+                            <img class="slider-img" src="data/img/image4.jpg" alt="photo4">
+                            <img class="slider-img" src="data/img/image5.jpg" alt="photo5">
+                        </div>
                     </div>
-                    <div class="btn-slider next"> > </div>
+                    <button class="btn-slider next">
+                        <div class="btn-div"> > </div>
+                    </button>
                 </div>
-
-                <div class="radio">
-                    <div class="btn-input">
-                        <input class="radio-about" type="radio" id="1" name="radio" value="1" checked>
-                        <label for="1"></label>
-                    </div>
-                    <div class="btn-input">
-                        <input class="radio-about" type="radio" id="2" name="radio" value="2">
-                        <label for="2"></label>
-                    </div>
-                    <div class="btn-input">
-                        <input class="radio-about" type="radio" id="3" name="radio" value="3">
-                        <label for="3"></label>
-                    </div>
-                    <div class="btn-input radio-about-clik">
-                        <input class="radio-about" type="radio" id="4" name="radio" value="4">
-                        <label for="4"></label>
-                    </div>
-                    <div class="btn-input radio-about-clik">
-                        <input class="radio-about" type="radio" id="5" name="radio" value="5">
-                        <label for="5"></label>
-                    </div>
+                <div class="dot-wrapper">
+                    <div id="1" class="dot active-dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot dot-close"></div>
+                    <div id="2" class="dot dot-close"></div>
                 </div>
             </div>
         </section>
@@ -126,10 +120,11 @@
                             <p class="book-auto">THE BOOK EATERS <br>
                                 By Sunyi Dean</p>
                             <p class="book-list">An Unusual Sci-Fi Story About A Book Eater Woman Who Tries
-                               Desperately To Save Her Dangerous Mind-Eater Son From Tradition And Certain Death.
-                               Complete With Dysfunctional Family Values, Light Sapphic Romance, And A Strong, Complex Protagonist.
-                               Not For The Faint Of Heart.</p>
-                            <button class="btn transition">Buy</button> 
+                                Desperately To Save Her Dangerous Mind-Eater Son From Tradition And Certain Death.
+                                Complete With Dysfunctional Family Values, Light Sapphic Romance, And A Strong, Complex
+                                Protagonist.
+                                Not For The Faint Of Heart.</p>
+                            <button class="btn transition">Buy</button>
                         </div>
                         <img class="book1" src="data/img/book.png" alt="book1">
                     </div>
@@ -139,12 +134,14 @@
                         <div class="book-title">
                             <p class="book-text text">Staff Picks</p>
                             <p class="book-auto">CACKLE
-                                 <br>
-                                 By Rachel Harrison</p>
+                                <br>
+                                By Rachel Harrison
+                            </p>
                             <p class="book-list">Are Your Halloween Movies Of Choice The Witches of Eastwick
-                                 And Practical Magic? Look No Further Than Here - Where A Woman Recovering From
-                                  A Breakup Moves To A Quaint Town In Upstate New York And Befriends A Beautiful Witch.</p>
-                            <button class="btn btn-2 transition">Buy</button> 
+                                And Practical Magic? Look No Further Than Here - Where A Woman Recovering From
+                                A Breakup Moves To A Quaint Town In Upstate New York And Befriends A Beautiful Witch.
+                            </p>
+                            <button class="btn btn-2 transition">Buy</button>
                         </div>
                         <img class="book1" src="data/img/book1.png" alt="book2">
                     </div>
@@ -156,10 +153,10 @@
                             <p class="book-auto">DANTE: POET OF THE SECULAR WORLD <br>
                                 By Erich Auerbach</p>
                             <p class="book-list">Auerbach's Engaging Book Places The 'Comedy' Within The Tradition
-                                 Of Epic, Tragedy, And Philosophy In General, Arguing For Dante's Uniqueness As
-                                  One Who Raised The Individual And His Drama Of Soul Into Something Of Divine
-                                   Significance—An Inspired Introduction To Dante's Main Themes.</p>
-                            <button class="btn transition">Buy</button> 
+                                Of Epic, Tragedy, And Philosophy In General, Arguing For Dante's Uniqueness As
+                                One Who Raised The Individual And His Drama Of Soul Into Something Of Divine
+                                Significance—An Inspired Introduction To Dante's Main Themes.</p>
+                            <button class="btn transition">Buy</button>
                         </div>
                         <img class="book1" src="data/img/book2.png" alt="book3">
                     </div>
@@ -171,9 +168,9 @@
                             <p class="book-auto">THE LAST QUEEN <br>
                                 By Clive Irving</p>
                             <p class="book-list">A Timely And Revelatory New Biography Of Queen Elizabeth
-                                 (And Her Family) Exploring How The Windsors Have Evolved And Thrived As
-                                  The Modern World Has Changed Around Them.</p>
-                            <button class="btn-3" disabled>Own</button> 
+                                (And Her Family) Exploring How The Windsors Have Evolved And Thrived As
+                                The Modern World Has Changed Around Them.</p>
+                            <button class="btn-3" disabled>Own</button>
                         </div>
                         <img class="book1" src="data/img/book3.png" alt="book4">
                     </div>
@@ -184,8 +181,9 @@
             <h2 class="coffee-text text">Coffee Shop</h2>
             <p>____</p>
             <span class="coffee-title">In our library, we have of cozy coffee shop, welcoming in customers
-                 with frothy cappuccinos and friendly conversation. You can get a favorite
-                 book and read in coffee shop. our barista to cook you best coffee, and also you can try desserts from bakery.
+                with frothy cappuccinos and friendly conversation. You can get a favorite
+                book and read in coffee shop. our barista to cook you best coffee, and also you can try desserts from
+                bakery.
             </span>
             <div class="shop">
                 <div class="shop-drink">
@@ -263,11 +261,15 @@
             <div class="contacts-wrapper">
                 <div class="contact-info">
                     <strong class="cont">For All Library Inquiries:</strong>
-                    <span class="info-please cont">Please Call <a class="info" href="tel:6177302370">(617) 730-2370</a></span>
-                    <span class="info-service cont">For TTY Service, Please Call <a class="info" href="tel:6177302370">(617) 730-2370</a></span>
-                    <span class="info-putterham cont">Putterham Library: <a class="info" href="tel:6177302385">(617) 730-2385</a></span>
+                    <span class="info-please cont">Please Call <a class="info" href="tel:6177302370">(617)
+                            730-2370</a></span>
+                    <span class="info-service cont">For TTY Service, Please Call <a class="info"
+                            href="tel:6177302370">(617) 730-2370</a></span>
+                    <span class="info-putterham cont">Putterham Library: <a class="info" href="tel:6177302385">(617)
+                            730-2385</a></span>
                     <strong class="info-staff cont">Senior Staff</strong>
-                    <span class="info-director cont">Library Director: <a class="name-dir" href="mailto:AmandaHirst@gmail.com">Amanda Hirst</a> </span>
+                    <span class="info-director cont">Library Director: <a class="name-dir"
+                            href="mailto:AmandaHirst@gmail.com">Amanda Hirst</a> </span>
                 </div>
                 <img class="map" src="data/img/loca.jpg" alt="loca">
             </div>
@@ -290,7 +292,8 @@
                 </div>
                 <div class="get">
                     <p class="card-text text">Get a reader card</p>
-                    <span class="get-text">You will be able to see a reader card after logging into account or you can register a new account</span>
+                    <span class="get-text">You will be able to see a reader card after logging into account or you can
+                        register a new account</span>
                     <div class="btn-block">
                         <button class="btn-card transition">Sign Up</button>
                         <button class="btn-card transition">Log in</button>
@@ -302,7 +305,8 @@
     <footer class="footer">
         <div class="footer-info">
             <div class="adres">
-                <a class="adres-cadman" href="https://goo.gl/maps/Px3AnRDQNG7wbHqGA">286 Cadman Plaza, New York, NY 11238, United States</a>
+                <a class="adres-cadman" href="https://goo.gl/maps/Px3AnRDQNG7wbHqGA">286 Cadman Plaza, New York, NY
+                    11238, United States</a>
                 <div class="insta">
                     <ul class="inst-list">
                         <li>
@@ -341,4 +345,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
