@@ -618,6 +618,31 @@ input {
     border: 1px solid #BB945F;
     color: #BB945F;
 }
+.btn-5 {
+    margin-top: 179px;
+}
+.btn-6,
+.btn-16 {
+    margin-top: 100px;
+}
+.btn-7,
+.btn-11 {
+    margin-top: 137px;
+}
+.btn-8,
+.btn-9,
+.btn-13,
+.btn-14,
+.btn-15 {
+    margin-top: 57px;
+}
+.btn-8,
+.btn-12,
+.btn-16 {
+    color: black;
+    background: #f0f0f0;
+    border-color: black;
+}
 .btn-check {
     cursor: pointer;
     width: 239px;
@@ -803,6 +828,10 @@ input {
 }
 
 @media (max-width: 768px) {
+    header {
+        position: fixed;
+        z-index: 1;
+    }
     .icon {
         position: relative;
         margin-left: 299px;
@@ -949,4 +978,13 @@ input {
 }
 .active-dot {
     background: #BB945F;
+    cursor: auto;
+}
+
+.wrap {
+    display: none;
+    transition: all 1s ease;
+}
+.active-wrap {
+    display: flex;
 }

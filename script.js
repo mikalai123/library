@@ -8,8 +8,6 @@ const navBtn = document.querySelector(".nav-line");
 const overlay = document.querySelector(".overlay");
 const btns = document.querySelectorAll(".nav-link");
 
-// console.log(nav);
-
 navBtn.addEventListener("click", function () {
     nav.classList.toggle("active");
     navBtn.classList.toggle("active");
@@ -25,7 +23,6 @@ btns.forEach(function (btn) {
     btn.addEventListener("click", function () {
         nav.classList.toggle("active");
         overlay.classList.toggle("open");
-
     })
 })
 
@@ -76,7 +73,6 @@ nextButton.addEventListener("click", next);
 prevButton.addEventListener("click", prev);
 
 dots.forEach((dot, index) => {
-    console.log(dot)
     dot.addEventListener("click", function () {
         position = 475 * index;
         sliderLine.style.left = -position + "px";
@@ -102,3 +98,34 @@ q5.addEventListener("click", function () {
     nextButton.setAttribute('disabled', '');
     nextButton.style.cursor = "auto";
 })
+
+//============================ Слайдер в блоке Favorites
+const seasons = document.querySelectorAll(".season-block");
+console.log(seasons);
+wrapIndex = 0;
+seasons.forEach((season, index) => {
+    season.addEventListener("click", function () {
+        wrapIndex = index;
+        slide1(wrapIndex);
+    })
+});
+const wraps = document.querySelectorAll(".wrap")
+const slide1 = (index) => {
+    for (let wrap of wraps) {
+        setTimeout(() => {
+            wrap.style.opacity = "0";
+        }, 0);
+        setTimeout(() => {
+            wrap.classList.remove("active-wrap");
+        }, 400);
+    }
+    setTimeout(() => {
+        wraps[index].classList.add("active-wrap");
+        wraps[index].style.opacity = "0";
+    }, 400);
+    setTimeout(() => {
+        // wraps[index].classList.add("active-wrap");
+        wraps[index].style.opacity = "1";
+    }, 600);
+}
+//============================
