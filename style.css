@@ -1606,6 +1606,12 @@ span.my-profile-text.text {
  .by-card.active {
     display: block;
  }
+ .by-card.open {
+    display: none;
+ }
+ .overlay6.active {
+    display: none;
+ }
  .text-buy-card {
     letter-spacing: 0.8px;
     font-size: 40px;
