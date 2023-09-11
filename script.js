@@ -508,6 +508,7 @@ logOut.addEventListener("click", function () {
 
     let cardBlock = document.querySelector(".card-block");
     cardBlock.value = ``;
+    location.reload();
 
 })
 logInButton.addEventListener("click", function () {
