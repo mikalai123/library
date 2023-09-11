@@ -250,23 +250,23 @@
                 <div class="blank-card">
                     <form action="" id="form3">
                         <label for="bcn">Bank card number</label>
-                        <input class="in1" type="text" name="bcn" id="bcn">
+                        <input class="in1" type="text" name="bcn" id="bcn" minlength="16" maxlength="16" required>
 
                         <label class="label-e-c" for="exp-code">Expiration code</label>
-                        <input class="in2" type="text" name="exp-code" id="exp-code">
-                        <input class="in2 in2-2" type="text" name="exp-code" id="exp-code1">
+                        <input class="in2" type="text" name="exp-code" id="exp-code" minlength="2" maxlength="2" required>
+                        <input class="in2 in2-2" type="text" name="exp-code" id="exp-code1" minlength="2" maxlength="2" required>
 
                         <label class="label-cvc" for="cvc">CVC</label>
-                        <input class="in2" type="text" name="cvc" id="cvc">
+                        <input class="in2" type="text" name="cvc" id="cvc" minlength="3" maxlength="3" required>
 
                         <label class="label-card-name" for="cardholder-name">Cardholder name</label>
-                        <input class="in1" type="text" name="cardholder-name" id="cardholder-name">
+                        <input class="in1" type="text" name="cardholder-name" id="cardholder-name" required>
 
                         <label class="label-postal-code" for="postal-code">Postal code</label>
-                        <input class="in1" type="text" name="postal-code" id="postal-code">
+                        <input class="in1" type="text" name="postal-code" id="postal-code" required>
 
                         <label class="label-city" for="city">City / Town</label>
-                        <input class="in1" type="text" name="city" id="city">
+                        <input class="in1" type="text" name="city" id="city" required>
 
                         <div class="block-buy">
                             <button class="btn-buy">Buy</button>
