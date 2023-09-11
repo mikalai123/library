@@ -1,4 +1,4 @@
-alert('Добрый день! Старался выполнить все пункты ТЗ. Почти удалось, за исключением пару пунктов) 190+/200');
+console.log('Добрый день! Старался выполнить все пункты ТЗ. Почти удалось, за исключением пару пунктов) 190+/200');
 const screenWidth = window.innerWidth;
 // console.log(screenWidth);
 //Burger
@@ -14,6 +14,8 @@ navBtn.addEventListener("click", function () {
     overlay.classList.toggle("open");
     modalReg.classList.remove("active");
     overlay1.classList.remove("open");
+    modalProf.classList.remove("active");
+    overlay4.classList.remove("open");
     // document.body.style.overflowY = 'hidden';
 })
 
@@ -478,6 +480,9 @@ const logInButton = document.querySelector(".btn-card-log");
 iconProf.addEventListener("click", function () {
     modalProf.classList.toggle("active");
     overlay4.classList.toggle("open");
+    nav.classList.remove("active");
+    navBtn.classList.remove("active");
+    overlay.classList.remove("open");
 })
 // modal-prof
 modalMyProf.addEventListener("click", function () {
@@ -757,3 +762,15 @@ function valid_form3() {
         items[3].value = '';
     }
 }
+
+
+
+
+// 1При наличии регистрации, но будучи не авторизованным
+// Блок Digital Library Cards. Если введённые имя и номер карты совпадают с данными пользователя, то отображается панель с информацией, вместо кнопки Check the card на 10 секунд. +2
+// Там же после отображения информации, кнопка возвращается в прежнее состояние, а поля в форме сбрасываются. +2
+
+// 2Модальное окно MY PROFILE
+// Счетчик для Visits отображает, сколько раз пользователь проходил процесс авторизации, включая самый первый - регистрацию. +2
+// 3Блок Digital Library Cards
+// При наличии авторизации вместо кнопки Check the Card будут отображаться данные пользователя и бейджи, как на дизайне LibraryCard after login in account. +2
