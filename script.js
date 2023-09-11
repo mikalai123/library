@@ -547,6 +547,7 @@ const closeBuyCard = document.querySelector(".closebtn-card");
         overlay6.classList.remove("open");
     })
 
+
 //=================================================Если введённые имя и номер карты совпадают с данными пользователя -----
 
 
@@ -640,3 +641,118 @@ let currentnumber = 0;
 
 //   Блок Digital Library Cards. Если введённые имя и номер карты совпадают с данными пользователя, то отображается панель с информацией, вместо кнопки Check the card на 10 секунд. +2
 //   Там же после отображения информации, кнопка возвращается в прежнее состояние, а поля в форме сбрасываются. +2
+const btnBuy = document.querySelector(".btn-buy");
+btnBuy.addEventListener("click", function(event) {
+    event.preventDefault();
+    buyCard.classList.add("open");
+    overlay6.classList.add("active");  
+})
+const form3 = document.getElementById("form3");
+const items = form3.elements;
+
+
+
+// function ewq() {
+//     for (let index = 0; index < items.length; index++) {
+//         const element = items[index];
+//         console.log(element);
+//         if (element.value !== '') {
+//             console.log("не пусто");
+//         } else {
+//             console.log("пусто");
+//         }
+//     } 
+// }
+// ewq();
+//  for (let index = 0; index < items.length; index++) {
+//     const element = items[index];
+//     element.addEventListener("input", function() {
+//         let qw = element.value
+//         console.log(qw);
+//     })
+//  }
+
+
+
+// const form3 = document.getElementById("form3");
+// const items = form.elements;
+// function valid_form3() {
+//     // const lowerCaseLetters = /[A-Za-zА-Яа-яЁё]/g;
+//     // const email = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+//     const psw = new RegExp(/[0-9]{8,}/);
+// for (let index = 0; index < items.length; index++) {
+//     const item = items[index];
+//     console.log(item[0])
+//     if (item[0].value.match(psw)) {
+//         console.log(`${item[0].value}`);
+//     } else {
+//         item[0].value = '';
+//     }
+//     // if (item[1].value.match(lowerCaseLetters)) {
+//     //     console.log(`${item[1].value}`);
+//     // } else {
+//     //     item[1].value = '';
+//     // }
+//     // if (item[2].value.match(email)) {
+//     //     console.log(`${item[2].value}`);
+//     // } else {
+//     //     item[2].value = '';
+//     // }
+//     // if (item[3].value.match(psw)) {
+//     //     console.log(`${item[3].value}`);
+//     // } else {
+//     //     item[3].value = '';
+//     // }
+// }
+
+// }
+// valid_form3();
+
+
+
+
+for (let index = 0; index < items.length; index++) {
+    items[index].addEventListener("change", function () {
+        if (items[0].value !== '' && items[1].value !== '' && items[2].value !== '' && items[3].value !== '' && items[4].value !== '' && items[5].value !== '' && items[6].value !== '') {
+            const w = document.getElementById("submit-reg-reg");
+            btnBuy.removeAttribute('disabled');
+        } else {
+            const w = document.getElementById("submit-reg-reg");
+            btnBuy.setAttribute('disabled', 'disabled');
+        }
+    });
+}
+
+for (let index = 0; index < items.length; index++) {
+    items[index].addEventListener("mouseout", valid_form3);
+}
+function valid_form3() {
+    const lowerCaseLetters = /[A-Za-zА-Яа-яЁё]/g;
+    const email = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+    const psw = new RegExp(/[A-Za-z0-9]{8,}/);
+    const psw1 = new RegExp(/[0-9]{16,}/);
+    const psw2 = new RegExp(/[0-9]{2,}/);
+    const psw3 = new RegExp(/[0-9]{2,}/);
+    const psw4 = new RegExp(/[0-9]{3,}/);
+
+    if (items[0].value.match(psw1)) {
+        console.log(`${items[0].value}`);
+    } else {
+        items[0].value = '';
+    }
+    if (items[1].value.match(psw2)) {
+        console.log(`${items[1].value}`);
+    } else {
+        items[1].value = '';
+    }
+    if (items[2].value.match(psw3)) {
+        console.log(`${items[2].value}`);
+    } else {
+        items[2].value = '';
+    }
+    if (items[3].value.match(psw4)) {
+        console.log(`${items[3].value}`);
+    } else {
+        items[3].value = '';
+    }
+}
