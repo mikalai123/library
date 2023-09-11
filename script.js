@@ -14,6 +14,8 @@ navBtn.addEventListener("click", function () {
     overlay.classList.toggle("open");
     modalReg.classList.remove("active");
     overlay1.classList.remove("open");
+    modalProf.classList.remove("active");
+    overlay4.classList.remove("open");
     // document.body.style.overflowY = 'hidden';
 })
 
@@ -478,6 +480,9 @@ const logInButton = document.querySelector(".btn-card-log");
 iconProf.addEventListener("click", function () {
     modalProf.classList.toggle("active");
     overlay4.classList.toggle("open");
+    nav.classList.remove("active");
+    navBtn.classList.remove("active");
+    overlay.classList.remove("open");
 })
 // modal-prof
 modalMyProf.addEventListener("click", function () {

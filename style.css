@@ -1013,11 +1013,6 @@ input {
 }
 
 @media (max-width: 768px) {
-    header {
-        position: fixed;
-        z-index: 1;
-    }
-
     .icon {
         position: relative;
         margin-left: 299px;
@@ -1514,6 +1509,8 @@ span.my-profile-text.text {
     display: none;
     cursor: pointer;
     margin-right: 20px;
+    position: relative;
+    z-index: 2;
 }
 
 
