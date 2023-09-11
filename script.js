@@ -1,4 +1,4 @@
-console.log('Добрый день! Старался выполнить все пункты ТЗ. Почти удалось, за исключением пару пунктов)');
+alert('Добрый день! Старался выполнить все пункты ТЗ. Почти удалось, за исключением пару пунктов) 190+/200');
 const screenWidth = window.innerWidth;
 // console.log(screenWidth);
 //Burger
@@ -228,7 +228,7 @@ logSingLog.addEventListener("click", function () {
 // }
 
 const submitBtnLog = document.getElementById("submit-reg-log");
-console.log(submitBtnLog);
+// console.log(submitBtnLog);
 submitBtnLog.addEventListener('click', (event) => {
     // отменяем действие по умолчанию. Перехода не будет.
     event.preventDefault();
@@ -390,7 +390,7 @@ copyText.addEventListener("click", function () {
 
 
 // const submitBtn = form.querySelector(".btn");
-console.log(submitBtn);
+// console.log(submitBtn);
 
 
 for (let index = 0; index < formInputs.length; index++) {
@@ -508,6 +508,7 @@ logOut.addEventListener("click", function () {
 
     let cardBlock = document.querySelector(".card-block");
     cardBlock.value = ``;
+    location.reload();
 
 })
 logInButton.addEventListener("click", function () {
