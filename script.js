@@ -522,23 +522,27 @@ const btnBooks = document.querySelectorAll(".btn");
 const buyCard = document.querySelector(".by-card");
 const closeBuyCard = document.querySelector(".closebtn-card");
 // console.log(btnBooks);
-for (let index = 0; index < btnBooks.length; index++) {
-    const element = btnBooks[index];
-    // console.log(element);
-    element.addEventListener("click", function() {
-        
-        overlay6.classList.toggle("open");
-        buyCard.classList.toggle("active");
+    for (let index = 0; index < btnBooks.length; index++) {
+        const element = btnBooks[index];
+        // console.log(element);
+        element.addEventListener("click", function() {
+            if (icon.classList.contains("open")) {
+                console.log("+ 1 book");
+            } else {
+                // console.log("No open");
+                overlay6.classList.toggle("open");
+                buyCard.classList.toggle("active");
+            }  
+        })
+    }
+    overlay6.addEventListener("click", function () {
+        buyCard.classList.remove("active");
+        overlay6.classList.remove("open");
     })
-}
-overlay6.addEventListener("click", function () {
-    buyCard.classList.remove("active");
-    overlay6.classList.remove("open");
-})
-closeBuyCard.addEventListener("click", function () {
-    buyCard.classList.remove("active");
-    overlay6.classList.remove("open");
-})
+    closeBuyCard.addEventListener("click", function () {
+        buyCard.classList.remove("active");
+        overlay6.classList.remove("open");
+    })
 
 //=================================================Если введённые имя и номер карты совпадают с данными пользователя -----
 
@@ -638,3 +642,9 @@ let currentnumber = 0;
 
 
 // Счетчик для Visits отображает, сколько раз пользователь проходил процесс авторизации, включая самый первый - регистрацию. +2
+
+// if (icon.classList.contains("open")) {
+//     console.log("open");
+// } else {
+//     console.log("No open");
+// }
