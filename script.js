@@ -514,7 +514,7 @@ logInButton.addEventListener("click", function () {
     overlay3.classList.toggle("open");
     logInWrap.classList.toggle("active");
 })
-
+icon
 
 
 //================================================= при нажатии на любую кнопку Buy открывается модальное окно LOGIN
@@ -528,10 +528,13 @@ const closeBuyCard = document.querySelector(".closebtn-card");
         element.addEventListener("click", function() {
             if (icon.classList.contains("open")) {
                 console.log("+ 1 book");
-            } else {
-                // console.log("No open");
                 overlay6.classList.toggle("open");
                 buyCard.classList.toggle("active");
+            } else {
+                // console.log("No open");
+                overlay3.classList.toggle("open");
+                logInWrap.classList.toggle("active");
+
             }  
         })
     }
@@ -635,16 +638,5 @@ let currentnumber = 0;
 
 
 
-
-//   При наличии регистрации, но будучи не авторизованным
-// Блок Digital Library Cards. Если введённые имя и номер карты совпадают с данными пользователя, то отображается панель с информацией, вместо кнопки Check the card на 10 секунд. +2
-// Там же после отображения информации, кнопка возвращается в прежнее состояние, а поля в форме сбрасываются. +2
-
-
-// Счетчик для Visits отображает, сколько раз пользователь проходил процесс авторизации, включая самый первый - регистрацию. +2
-
-// if (icon.classList.contains("open")) {
-//     console.log("open");
-// } else {
-//     console.log("No open");
-// }
+//   Блок Digital Library Cards. Если введённые имя и номер карты совпадают с данными пользователя, то отображается панель с информацией, вместо кнопки Check the card на 10 секунд. +2
+//   Там же после отображения информации, кнопка возвращается в прежнее состояние, а поля в форме сбрасываются. +2
