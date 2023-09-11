@@ -1013,6 +1013,10 @@ input {
 }
 
 @media (max-width: 768px) {
+    .season {
+        position: sticky;
+        top: 30px;
+    }
     .icon {
         position: relative;
         margin-left: 299px;
