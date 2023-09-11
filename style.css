@@ -1624,6 +1624,7 @@ span.my-profile-text.text {
     position: absolute;
     margin-left: 608px;
     margin-top: 7px;
+    cursor: pointer;
 }
 .by-card-info {
     display: flex;
