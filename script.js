@@ -1,4 +1,4 @@
-console.log('Добрый день! Старался выполнить все пункты ТЗ. Вроде мне это удалось! Хорошего лня и настроения!)');
+console.log('Добрый день! Старался выполнить все пункты ТЗ. Почти удалось, за исключением пару пунктов)');
 const screenWidth = window.innerWidth;
 // console.log(screenWidth);
 //Burger
@@ -468,6 +468,7 @@ const modalProf = document.querySelector(".modal-prof");
 const modalMyProf = document.querySelector(".modal-my-prof");
 const overlay4 = document.querySelector(".overlay4");
 const overlay5 = document.querySelector(".overlay5");
+const overlay6 = document.querySelector(".overlay6");
 const closeProf = document.querySelector(".close-prof");
 const logOut = document.querySelector(".log-out");
 const logInButton = document.querySelector(".btn-card-log");
@@ -518,15 +519,26 @@ logInButton.addEventListener("click", function () {
 
 //================================================= при нажатии на любую кнопку Buy открывается модальное окно LOGIN
 const btnBooks = document.querySelectorAll(".btn");
+const buyCard = document.querySelector(".by-card");
+const closeBuyCard = document.querySelector(".closebtn-card");
 // console.log(btnBooks);
 for (let index = 0; index < btnBooks.length; index++) {
     const element = btnBooks[index];
     // console.log(element);
     element.addEventListener("click", function() {
-        overlay3.classList.toggle("open");
-        logInWrap.classList.toggle("active");
+        
+        overlay6.classList.toggle("open");
+        buyCard.classList.toggle("active");
     })
 }
+overlay6.addEventListener("click", function () {
+    buyCard.classList.remove("active");
+    overlay6.classList.remove("open");
+})
+closeBuyCard.addEventListener("click", function () {
+    buyCard.classList.remove("active");
+    overlay6.classList.remove("open");
+})
 
 //=================================================Если введённые имя и номер карты совпадают с данными пользователя -----
 
@@ -594,10 +606,10 @@ let currentnumber = 0;
         let bookTitle = book.querySelector(".book-auto").textContent;
         bookTitle = bookTitle.toLowerCase();
         bookTitle = bookTitle[0].toUpperCase() + bookTitle.slice(1);
-        console.log(bookTitle);
+        // console.log(bookTitle);
         
         let bookAutor = book.querySelector(".book-autor").textContent;
-        console.log(bookAutor);
+        // console.log(bookAutor);
 
         const listBooks = document.querySelector(".list-books");
         let listBook = document.createElement("li");
@@ -607,12 +619,12 @@ let currentnumber = 0;
 
         let number = document.querySelector(".number-book");
         number.innerText = ++number.innerText;
-        console.log(number);
+        // console.log(number);
 
 
         button.textContent = "Own";
         button.setAttribute('disabled', 'disabled');
-        console.log(button.textContent);
+        // console.log(button.textContent);
     })
   });
 

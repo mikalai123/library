@@ -52,7 +52,8 @@ a {
 .overlay2,
 .overlay3,
 .overlay4,
-.overlay5 {
+.overlay5,
+.overlay6 {
     display: none;
     position: fixed;
     left: 0;
@@ -67,7 +68,8 @@ a {
 .overlay2.open,
 .overlay3.open,
 .overlay4.open,
-.overlay5.open {
+.overlay5.open,
+.overlay6.open {
     display: block;
     background: rgba(41, 41, 41, 0.6);
 
@@ -1601,29 +1603,89 @@ span.my-profile-text.text {
     z-index: 2;
     display: none;
  }
+ .by-card.active {
+    display: block;
+ }
+ .text-buy-card {
+    letter-spacing: 0.8px;
+    font-size: 40px;
+    margin-left: 143px;
+ }
  .by-card-title {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 60px;
+    height: 61px;
     background: black;
     color: white;
 
  }
  .closebtn-card {
     position: absolute;
-    margin-left: 600px;
+    margin-left: 608px;
+    margin-top: 7px;
 }
 .by-card-info {
     display: flex;
+    margin-top: 30px;
+}
+.blank-card {
+    margin-left: 14px;
 }
 #form3 {
     display: flex;
     flex-flow: column;
 }
 .in1 {
-    width: 200px;
+    width: 198px;
+    height: 18px;
+    margin-top: 11px;
 }
 .in2 {
-    width: 45px;
+    width: 43px;
+    height: 18px;
+    margin-top: 10px;
+}
+.in2-2 {
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 90px;
+}
+.label-e-c {
+    margin-top: 10px;
+}
+.label-cvc {
+    margin-top: 10px;
+}
+.label-card-name {
+    margin-top: 20px;
+}
+.label-postal-code {
+    margin-top: 10px;
+}
+.label-city {
+    margin-top: 10px;
+}
+.buy-card-text {
+    width: 330px;
+    color: #8E8E8E;
+    margin-left: -41px;
+    letter-spacing: 1.5px;
+    line-height: 20px;
+}
+.btn-buy {
+    width: 76px;
+    height: 30px;
+    margin-left: -19px;
+    margin-top: 19px;
+}
+.block-buy {
+    margin-left: 44px;
+}
+.price-buy-card {
+        margin-left: 56px;
+        font-size: 20px;
+        margin-top: -23px;
+        margin-left: 81px;
+        letter-spacing: 2.5px;
 }
