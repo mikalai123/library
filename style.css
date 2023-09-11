@@ -1566,7 +1566,7 @@ span.my-profile-text.text {
     height: 70px;
 }
 .list-books {
-    height: 125px;
+    height: 100px;
     overflow-y: scroll;
 }
 .list-book {
