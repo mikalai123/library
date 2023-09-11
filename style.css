@@ -1593,13 +1593,13 @@ span.my-profile-text.text {
 
 /*  buy card */
  .by-card {
-    width: 650px;
+    width: 640px;
     height: 540px;
     position: fixed;
     background: white;
     left: 50%;
     top: 50%;
-    margin-left: -325px;
+    margin-left: -320px;
     margin-top: -270px;
     z-index: 2;
     display: none;
